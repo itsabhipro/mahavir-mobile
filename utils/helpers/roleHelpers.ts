@@ -48,7 +48,7 @@ export async function getRedirectPath(): Promise<string> {
   const role = await getUserRole();
   
   if (role === 'admin') {
-    return '/admin/dashboard';
+    return '/admin';
   }
   
   return '/customer';
